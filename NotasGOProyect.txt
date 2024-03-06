@@ -1,0 +1,15 @@
+go mod init github.com/ernestokorpys/gobackend
+go get -u gorm.io/gorm
+go get -u gorm.io/driver/mysql
+go get github.com/gofiber/fiber/v2
+go get github.com/joho/godotenv //variables env
+go get -u github.com/dgrijalva/jwt-go
+
+para ejecurar cambios en tiempo real
+
+Set-ExecutionPolicy RemoteSigned
+
+ nodemon --exec go run main.go --signal SIGTERM
+
+ Set-ExecutionPolicy Restricted
+
